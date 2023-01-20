@@ -1,0 +1,275 @@
+@startuml
+
+title __MY_APPLICATION_PROJECT_PART_1.APP's Class Diagram__\n
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.AccountDeleteActivity {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.AddServiceActivity {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.AdminActivity {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.BuildConfig {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.CarRental {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    enum CarType {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.CustomerActivity {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.EmployeeActivity {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    enum Identity {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    enum LicenseType {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.ListRecheck {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.MainActivity {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.MovingAssistance {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.Rate {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.RateActicity {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.RegisterActivity {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.RequestCarRentalActivity {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    enum RequestStatus {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.RequestTruckRentalActivity {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.RequestedMovingAssistanceActivity {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.RequestedService {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.ScheduleServiceActivity {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.ScheduledServices {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.Service {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    enum ServiceType {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.SpecificRatingActivity {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.SubmittedServiceActivity {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.TruckRental {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.UserAccount {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.ViewAllRatingsActivity {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.ViewAllServicesActivies {
+    }
+  }
+  
+
+  namespace com.example.myapplicationprojectpart1 {
+    class com.example.myapplicationprojectpart1.WelcomeActivity {
+    }
+  }
+  
+
+  com.example.myapplicationprojectpart1.AccountDeleteActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.myapplicationprojectpart1.AccountDeleteActivity o-- com.example.myapplicationprojectpart1.UserAccount : userAccount
+  com.example.myapplicationprojectpart1.AddServiceActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.myapplicationprojectpart1.AddServiceActivity o-- com.example.myapplicationprojectpart1.Service : service
+  com.example.myapplicationprojectpart1.AddServiceActivity o-- com.example.myapplicationprojectpart1.ServiceType : serviceType
+  com.example.myapplicationprojectpart1.AdminActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.myapplicationprojectpart1.CarRental -up-|> com.example.myapplicationprojectpart1.RequestedService
+  com.example.myapplicationprojectpart1.CarRental o-- com.example.myapplicationprojectpart1.CarType : carType
+  com.example.myapplicationprojectpart1.CarRental o-- com.example.myapplicationprojectpart1.LicenseType : licenseType
+  com.example.myapplicationprojectpart1.CarRental o-- com.example.myapplicationprojectpart1.RequestStatus : status
+  com.example.myapplicationprojectpart1.CustomerActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.myapplicationprojectpart1.CustomerActivity o-- com.example.myapplicationprojectpart1.UserAccount : account
+  com.example.myapplicationprojectpart1.EmployeeActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.myapplicationprojectpart1.EmployeeActivity o-- com.example.myapplicationprojectpart1.UserAccount : account
+  com.example.myapplicationprojectpart1.EmployeeActivity o-- com.example.myapplicationprojectpart1.Identity : identity
+  com.example.myapplicationprojectpart1.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.myapplicationprojectpart1.MovingAssistance -up-|> com.example.myapplicationprojectpart1.RequestedService
+  com.example.myapplicationprojectpart1.MovingAssistance o-- com.example.myapplicationprojectpart1.RequestStatus : status
+  com.example.myapplicationprojectpart1.Rate .up.|> java.io.Serializable
+  com.example.myapplicationprojectpart1.Rate o-- com.example.myapplicationprojectpart1.UserAccount : customer
+  com.example.myapplicationprojectpart1.Rate o-- com.example.myapplicationprojectpart1.ScheduledServices : scheduledServices
+  com.example.myapplicationprojectpart1.RateActicity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.myapplicationprojectpart1.RateActicity o-- com.example.myapplicationprojectpart1.UserAccount : account
+  com.example.myapplicationprojectpart1.RateActicity o-- com.example.myapplicationprojectpart1.ScheduledServices : service
+  com.example.myapplicationprojectpart1.RegisterActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.myapplicationprojectpart1.RegisterActivity o-- com.example.myapplicationprojectpart1.Identity : identity
+  com.example.myapplicationprojectpart1.RequestCarRentalActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.myapplicationprojectpart1.RequestCarRentalActivity o-- com.example.myapplicationprojectpart1.UserAccount : account
+  com.example.myapplicationprojectpart1.RequestCarRentalActivity o-- com.example.myapplicationprojectpart1.CarType : carType
+  com.example.myapplicationprojectpart1.RequestCarRentalActivity o-- com.example.myapplicationprojectpart1.LicenseType : licenseType
+  com.example.myapplicationprojectpart1.RequestCarRentalActivity o-- com.example.myapplicationprojectpart1.RequestedService : requestedService
+  com.example.myapplicationprojectpart1.RequestCarRentalActivity o-- com.example.myapplicationprojectpart1.ScheduledServices : scheduledServices
+  com.example.myapplicationprojectpart1.RequestCarRentalActivity o-- com.example.myapplicationprojectpart1.RequestStatus : status
+  com.example.myapplicationprojectpart1.RequestTruckRentalActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.myapplicationprojectpart1.RequestTruckRentalActivity o-- com.example.myapplicationprojectpart1.UserAccount : account
+  com.example.myapplicationprojectpart1.RequestTruckRentalActivity o-- com.example.myapplicationprojectpart1.LicenseType : licenseType
+  com.example.myapplicationprojectpart1.RequestTruckRentalActivity o-- com.example.myapplicationprojectpart1.RequestedService : requestedService
+  com.example.myapplicationprojectpart1.RequestTruckRentalActivity o-- com.example.myapplicationprojectpart1.ScheduledServices : scheduledServices
+  com.example.myapplicationprojectpart1.RequestTruckRentalActivity o-- com.example.myapplicationprojectpart1.RequestStatus : status
+  com.example.myapplicationprojectpart1.RequestedMovingAssistanceActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.myapplicationprojectpart1.RequestedMovingAssistanceActivity o-- com.example.myapplicationprojectpart1.UserAccount : account
+  com.example.myapplicationprojectpart1.RequestedMovingAssistanceActivity o-- com.example.myapplicationprojectpart1.RequestedService : requestedService
+  com.example.myapplicationprojectpart1.RequestedMovingAssistanceActivity o-- com.example.myapplicationprojectpart1.ScheduledServices : scheduledServices
+  com.example.myapplicationprojectpart1.RequestedMovingAssistanceActivity o-- com.example.myapplicationprojectpart1.RequestStatus : status
+  com.example.myapplicationprojectpart1.RequestedService .up.|> java.io.Serializable
+  com.example.myapplicationprojectpart1.RequestedService o-- com.example.myapplicationprojectpart1.ScheduledServices : scheduledServices
+  com.example.myapplicationprojectpart1.RequestedService o-- com.example.myapplicationprojectpart1.RequestStatus : status
+  com.example.myapplicationprojectpart1.ScheduleServiceActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.myapplicationprojectpart1.ScheduleServiceActivity o-- com.example.myapplicationprojectpart1.UserAccount : account
+  com.example.myapplicationprojectpart1.ScheduleServiceActivity o-- com.example.myapplicationprojectpart1.ServiceType : eventType
+  com.example.myapplicationprojectpart1.ScheduleServiceActivity o-- com.example.myapplicationprojectpart1.ScheduledServices : scheduledService
+  com.example.myapplicationprojectpart1.ScheduledServices .up.|> java.io.Serializable
+  com.example.myapplicationprojectpart1.Service .up.|> java.io.Serializable
+  com.example.myapplicationprojectpart1.SpecificRatingActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.myapplicationprojectpart1.SpecificRatingActivity o-- com.example.myapplicationprojectpart1.Rate : rate
+  com.example.myapplicationprojectpart1.SubmittedServiceActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.myapplicationprojectpart1.SubmittedServiceActivity o-- com.example.myapplicationprojectpart1.UserAccount : account
+  com.example.myapplicationprojectpart1.SubmittedServiceActivity o-- com.example.myapplicationprojectpart1.Identity : identity
+  com.example.myapplicationprojectpart1.SubmittedServiceActivity o-- com.example.myapplicationprojectpart1.RequestedService : requestedService
+  com.example.myapplicationprojectpart1.TruckRental -up-|> com.example.myapplicationprojectpart1.RequestedService
+  com.example.myapplicationprojectpart1.TruckRental o-- com.example.myapplicationprojectpart1.LicenseType : licenseType
+  com.example.myapplicationprojectpart1.TruckRental o-- com.example.myapplicationprojectpart1.RequestStatus : status
+  com.example.myapplicationprojectpart1.UserAccount .up.|> java.io.Serializable
+  com.example.myapplicationprojectpart1.UserAccount o-- com.example.myapplicationprojectpart1.Identity : identity
+  com.example.myapplicationprojectpart1.ViewAllRatingsActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.myapplicationprojectpart1.ViewAllServicesActivies -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.myapplicationprojectpart1.ViewAllServicesActivies o-- com.example.myapplicationprojectpart1.Identity : identity
+  com.example.myapplicationprojectpart1.WelcomeActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.myapplicationprojectpart1.WelcomeActivity o-- com.example.myapplicationprojectpart1.Identity : identity
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

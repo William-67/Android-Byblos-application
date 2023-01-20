@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddServiceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/serviceNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Service Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/servicePriceET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Price"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Complete information:"
+            android:textColor="#090808"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/CILayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/addBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addService"
+                android:text="Add/Save Service" />
+
+            <Button
+                android:id="@+id/addInfobtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addInfo"
+                android:text="Add Information" />
+
+            <Button
+                android:id="@+id/delinfobtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="deleteInfo"
+                android:text="delete infomation" />
+
+            <Button
+                android:id="@+id/deleteservice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="deleteService"
+                android:text="DELETE SERVICE" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

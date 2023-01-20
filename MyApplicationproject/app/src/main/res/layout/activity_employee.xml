@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewAllScheduleBtn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hello Employee, what do you want to do today?"
+            android:textSize="23dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/scheduleServiceBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="scheduleService"
+                android:text="Schedule a Service" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="viewAllScheduledServices"
+                android:text="View all scheduled services" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="viewSubmittedRequest"
+                android:text="View submitted requested" />
+
+            <Button
+                android:id="@+id/employeeSeeAllRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="viewAllRate"
+                android:text="See all Rating" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
